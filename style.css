@@ -1,0 +1,98 @@
+/* font google */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;}
+
+.contenedorChat{
+    position: fixed;
+    display: flex;
+    width: 450px;
+    height: 600px;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.encabezadoChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #e94480;
+}
+
+.encabezadoChat button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.encabezadoChat h2{
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+.encabezadoChat img{
+    width:50px; 
+    height:50px; 
+    border-radius:50%; 
+    margin-right:10px;
+}
+.boton-enviar{
+    background-color: #e94480;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.boton-enviar:hover{
+    background-color: #891b41;
+    cursor: pointer;
+}
+#usuarioInput{
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botonAbrir{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 5px solid #e94480;
+    padding: 5px;
+    border-radius: 100%;
+}
+.botonAbrir img{
+    width:120px; 
+    height:120px; 
+    border-radius:50%; 
+}
+
+#cuerpoChat{
+     height: 400px; 
+     overflow-y: scroll; 
+     border: 1px solid #dad8d8; 
+     padding: 10px; 
+     margin-bottom: 10px;
+}
+
+#cuerpoChat {
+  white-space: pre-line;
+}

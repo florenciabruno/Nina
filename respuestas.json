@@ -1,0 +1,50 @@
+{ 
+  "horario": [
+    "Estamos de lunes a viernes de 7:30 a 13:00 y de 13:30 A 19:15📚 \nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "pregunta_sobre_usuario": [
+    "Sé que me estás probando 😜 \nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "No mucho, ¡pero me encantaría conocerte mejor! 🤗\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "Solo lo que me contás, jeje 😅\nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+    "noticias": [
+    "Las últimas noticias de la biblioteca están en https://www.fcedu.uner.edu.ar/biblioteca/inicio/ 📰 ¿En qué necesitas que te ayude?\nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "servicios": [
+    "Nuestra Biblioteca un espacio de encuentro, acompañamiento y saber compartido. Acá ofrecemos préstamos de libros a domicilio, en mostrador, en sala de lectura, interbibliotecario de la UNER 📖\nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "donaciones": [
+    "Recibimos donaciones de obras que cumplan estos tres requisitos:\n 1-Temática acorde a nuestra oferta académica \n 2- Que se encuentren en buen estado físico \n 3-Que no los tengamos en la biblioteca \nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "equipo": [
+    "Nuestro equipo de trabajo está conformado por Polo, Rosana, Gonzalo, María Eugenia y yo \nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+    "hola": [
+    "¿En qué necesitas que te ayude? \n🕐 Horarios y servicios de la biblioteca.\n🔎 Cómo usar el catálogo online para buscar libros, tesis, artículos o videos.\n📦 Cómo hacer donaciones de materiales.\n👩‍🏫 Quiénes forman parte del equipo y qué tareas realizan.\n📰 Las últimas noticias y novedades.\n😄 ¡Y también sé contar algunas reflexiones y chistes para hacerte reír mientras navegás!\nSolo escribime qué querés saber, por ejemplo: \n“¿Cómo busco un libro en el catálogo?”\n“¿Cuáles son los horarios de atención?”\n“Contame un chiste”\nEstoy lista para ayudarte 💬"
+  ],
+  "catalogo": [
+    "Cómo buscar en el catálogo: \n 1️⃣ Escribí lo que querés buscar en la caja de texto. Podés combinar palabras con Y, O o NO para afinar los resultados. \n2️⃣ Si querés, filtrá por tipo de material: Libro, Tesis, Artículo o Video Tape. \n3️⃣ Podés usar el diccionario de términos para elegir palabras de la base (por título, autor o palabra clave). Solo hacé clic en el término y se agrega automáticamente. \n4️⃣ En “Búsquedas anteriores” vas a ver tus consultas previas, si ya hiciste alguna. \n💬 Tip: usá paréntesis para agrupar términos y que el sistema entienda mejor tu búsqueda \nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "chiste": [
+    "Dicen que si decís ‘Chacho’ tres veces frente al espejo, aparece alguien con un mate y una sonrisa.\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¿Por qué los libros de matemáticas están siempre tristes? Porque tienen muchos problemas. 😢📚\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¿Qué le dijo un libro a otro? ¡Tengo muchas páginas en blanco! 📖😄\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¿Por qué el libro de historia se sentía solo? Porque todos lo dejaban en el pasado. 🕰️😂\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¿Qué hace un libro en el gimnasio? ¡Levanta pesas! 🏋️‍♂️📘\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "Si te perdés buscando el aula, seguí el olor a mate, siempre lleva a algún grupo de estudiantes.\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "En esta facultad no hay problemas, hay Chachos que los resuelven.😉\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¿Por qué los libros no pueden mentir? Porque siempre tienen la verdad escrita. 📚😇\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "Si entrás al baño de la FCEDU y salís con una crisis existencial, es normal. Son las frases en las puertas, no el espejo.\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "Los baños de la FCEDU no te dan papel, te dan reflexiones.\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "Una vez fui al baño de la FCEDU y salí con ganas de escribir una tesis.\nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "gracias": [
+    "¡De nada! 😊\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¡Para eso estoy! 🤗\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "¡Un placer ayudarte! 😄\nSi querés que diga nuevamente las opciones escribi MENU 🤗"
+  ],
+  "default": [
+    "No entendí ¿Podrías repetirme? 🤔\nSi querés que diga nuevamente las opciones escribi MENU 🤗",
+    "mmm... ¿Podrías expresarlo de otra forma para entender? 📝\nSi querés que diga nuevamente las opciones escribi MENU 🤗"  ]
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+
+    <!-- Botón abrir-chat -->
+    <div class="botonAbrir" id="botonAbrir">
+        <img src="img/Base-bot-NINA-pestañea-con-fondo--blanco.gif" alt=>
+    </div>
+
+    <!-- Cuadro del chat -->
+
+    <div class="contenedorChat" id="contenedorChat" style="display: none;"> 
+        <div class="encabezadoChat">
+            <img src="img/nina-ojos.gif" alt="300x300" >
+            <h2>Nina</h2>
+            <!-- Botón cerrar-chat -->
+            <button id="cerrarChat">x</button>
+        </div>
+        <div id="cuerpoChat">
+        </div>
+        <input type="text" id="usuarioInput" placeholder="Escribe tu mensaje...">
+        <button onclick="enviarMensaje()" class="boton-enviar">Enviar</button>
+    </div>
+
+
+</body>
+
+<script>
+
+        const presentacionNina = "Nina: ¡Hola! Soy Nina 🤖 ¿En cuál de estos temas puedo ayudarte? \n 🕐 Horarios y servicios de la biblioteca.\n🔎 Cómo usar el catálogo online para buscar libros, tesis, artículos o videos.\n📦 Cómo hacer donaciones de materiales.\n👩‍🏫 Quiénes forman parte del equipo y qué tareas realizan.\n📰 Las últimas noticias y novedades.\n😄 ¡Y también sé contar algunas reflexiones y chistes que aprendí por los pasillos\nEstoy lista para ayudarte 💬"
+
+         // abrir chat
+      const botonAbrir = this.document.getElementById('botonAbrir');
+      const contenedorChat = this.document.getElementById('contenedorChat');
+      if (botonAbrir && contenedorChat) {
+          botonAbrir.addEventListener('click', () => {
+              contenedorChat.style.display = 'flex';
+              botonAbrir.style.display = 'none';
+              cuerpoChat.textContent = presentacionNina;
+          });}
+
+           // cerrar chat
+      const cerrarChat = this.document.getElementById('cerrarChat');
+        if (cerrarChat && contenedorChat && botonAbrir) {
+            cerrarChat.addEventListener('click', () => {
+                contenedorChat.style.display = 'none';
+                botonAbrir.style.display = 'flex';
+            });}
+    
+ 
+// mensajes en el cuerpo del chat
+
+    const cuerpoChat = document.getElementById('cuerpoChat');
+
+    function displayMessage(remitente, texto) {
+        const globo = document.createElement('div');
+        globo.textContent = `${remitente}: ${texto}`;
+        globo.style.margin = '5px 0';
+        globo.style.textAlign = remitente === 'Nina' ? 'left' : 'right';
+        cuerpoChat.appendChild(globo);
+        cuerpoChat.scrollTop = cuerpoChat.scrollHeight;
+    }
+
+//Enviar mensajes con enter
+const usuarioInput = document.getElementById('usuarioInput');
+usuarioInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        enviarMensaje();
+    }
+});
+
+
+
+// comunicación con el servidor
+    async function enviarMensaje() {
+        const usuarioInput = document.getElementById('usuarioInput');
+        const mensaje = usuarioInput.value.trim();
+        if (!mensaje) return;
+
+        displayMessage('Tú', mensaje);
+        usuarioInput.value = '';
+
+        try {
+            const response = await fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: mensaje })
+            });
+
+            const respuestaNina = await response.json();
+            displayMessage('Nina', respuestaNina.response);
+
+        } catch (error) {
+            console.error(error);
+            displayMessage('Sistema', '⚠️ Error al conectar con el servidor.');
+        }
+    }
+
+
+</script>
+
+
+</html>
